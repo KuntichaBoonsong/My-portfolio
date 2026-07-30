@@ -994,4 +994,23 @@ body[data-lang="en"] .lang-en { display: block; }
   .timeline { padding-left: 22px; }
   .timeline-dot { left: -27px; }
   .lang-toggle { margin-top: 10px; }
+
+  .hero-eyebrow { font-size: 0.85rem; }
+  .hero-title { font-size: clamp(2.2rem, 9vw, 3rem); }
+  .hero-role { font-size: clamp(1.1rem, 5vw, 1.4rem); }
+  .hero-desc { font-size: 1rem; margin-bottom: 32px; }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    padding: 15px 28px;
+    font-size: 1rem;
+  }
+  .hero-socials { margin-bottom: 10px; }
+  .hero-socials a { width: 44px; height: 44px; font-size: 0.8rem; }
+  .scroll-down { display: none; }
 }
