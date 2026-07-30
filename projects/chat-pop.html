@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Pop — Serverless AI Chatbot | Kunticha Boonsong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=4">
+</head>
+<body data-lang="th">
+
+<div class="bg-glow"></div>
+<div id="progress-bar"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html#home" class="logo">Kunticha<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html#home" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
+      <a href="../index.html#about" data-th="เกี่ยวกับ" data-en="About">เกี่ยวกับ</a>
+      <a href="../index.html#skills" data-th="ทักษะ" data-en="Skills">ทักษะ</a>
+      <a href="../index.html#experience" data-th="ประสบการณ์" data-en="Experience">ประสบการณ์</a>
+      <a href="../index.html#projects" data-th="ผลงาน" data-en="Projects">ผลงาน</a>
+      <a href="../index.html#certificates" data-th="ใบประกาศนียบัตร" data-en="Certificates">ใบประกาศนียบัตร</a>
+      <a href="../index.html#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+      <button class="lang-toggle" id="langToggle">EN</button>
+    </nav>
+    <button class="burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<a href="../index.html#projects" class="back-link reveal">← <span data-th="กลับไปหน้าผลงาน" data-en="Back to Projects">กลับไปหน้าผลงาน</span></a>
+
+<section class="project-hero reveal">
+  <div class="project-hero-icon"><img src="../pic/projects/chatpop-head.png" alt="Chat Pop" onerror="this.remove(); this.parentElement.textContent='CP'"></div>
+  <div>
+    <h1 class="project-hero-title">Chat Pop — Serverless AI Chatbot</h1>
+    <p class="project-hero-sub" data-th="Chatbot AI แบบ Serverless เต็มรูปแบบบน AWS ตั้งแต่ Front-End จนถึง Backend" data-en="A fully serverless AI chatbot on AWS, from front-end to backend">Chatbot AI แบบ Serverless เต็มรูปแบบบน AWS ตั้งแต่ Front-End จนถึง Backend</p>
+    <div class="project-meta">
+      <span><b data-th="บทบาท" data-en="Role">บทบาท</b>: <span data-th="ผู้นำเสนอ (Pitching) และช่วยวางแผน" data-en="Pitching &amp; Planning Support">ผู้นำเสนอ (Pitching) และช่วยวางแผน</span></span>
+      <span><b data-th="ทีม" data-en="Team">ทีม</b>: <span data-th="โปรเจกต์กลุ่ม / งานวิชาการ" data-en="Group / Academic Project">โปรเจกต์กลุ่ม / งานวิชาการ</span></span>
+      <span><b data-th="ปี" data-en="Year">ปี</b>: 2025</span>
+    </div>
+    <div class="project-tags">
+      <span>AWS Lambda</span><span>API Gateway</span><span>Amazon S3</span><span>DynamoDB</span>
+    </div>
+  </div>
+</section>
+
+<div class="project-gallery reveal">
+  <a class="gallery-frame" href="../pic/projects/chatpop-architecture.png" target="_blank" rel="noopener">
+    <img src="../pic/projects/chatpop-architecture.png" alt="Chat Pop system architecture diagram">
+    <span class="gallery-caption lang-th">System Architecture Diagram — ผังระบบที่ฉันช่วยวางแผน</span>
+    <span class="gallery-caption lang-en">System Architecture Diagram — I helped plan this system flow</span>
+  </a>
+  <a class="gallery-frame" href="../pic/projects/chatpop-ui.png" target="_blank" rel="noopener">
+    <img src="../pic/projects/chatpop-ui.png" alt="Chat Pop chatbot interface">
+  </a>
+</div>
+
+<section class="detail-section reveal">
+  <h3 data-th="ภาพรวมโปรเจกต์" data-en="Project Overview">ภาพรวมโปรเจกต์</h3>
+  <p class="lang-th">
+    Chat Pop คือ Chatbot AI ที่ทีมพัฒนาแบบ Serverless เต็มรูปแบบบน AWS โดย Front-end ถูก Host ไว้บน Amazon S3
+    ส่วน Backend ขับเคลื่อนด้วย AWS Lambda และ API Gateway เชื่อมต่อกับ Groq API เพื่อให้การตอบสนองของ AI
+    รวดเร็วแบบ Low-Latency และใช้ Amazon DynamoDB สำหรับจัดเก็บข้อมูล Session การสนทนาแบบ Scalable
+    ในโปรเจกต์นี้ฉันรับผิดชอบด้านการนำเสนอผลงาน (Pitching) และช่วยวางแผนโปรเจกต์ ควบคู่ไปกับทีมที่ดูแลการพัฒนาระบบ
+  </p>
+  <p class="lang-en">
+    Chat Pop is a fully serverless AI chatbot built by the team on AWS. The front-end is hosted on Amazon S3,
+    while the backend is powered by AWS Lambda and API Gateway. It integrates the Groq API for low-latency AI
+    responses and uses Amazon DynamoDB for scalable chat-session storage. On this project, I was responsible
+    for pitching the work and supporting project planning, alongside the team who handled the system
+    development.
+  </p>
+</section>
+
+<section class="detail-section reveal">
+  <h3 data-th="ไฮไลต์การทำงาน" data-en="Key Highlights">ไฮไลต์การทำงาน</h3>
+  <ul class="feature-list">
+    <li>
+      <span class="lang-th">นำเสนอผลงาน (Pitching) ของโปรเจกต์ Chat Pop ต่อคณะกรรมการและผู้ฟัง</span>
+      <span class="lang-en">Pitched the Chat Pop project to the judging panel and audience</span>
+    </li>
+    <li>
+      <span class="lang-th">ช่วยวางแผนระบบ (System Flow) ตั้งแต่ User ไปจนถึง Front-end, API Gateway, Lambda, Groq API และ DynamoDB</span>
+      <span class="lang-en">Helped plan the system flow — from the user through the front-end, API Gateway, Lambda, Groq API, and DynamoDB</span>
+    </li>
+    <li>
+      <span class="lang-th">ทำงานร่วมกับทีมที่พัฒนา Chatbot AI แบบ Serverless บน AWS (S3, Lambda, API Gateway, DynamoDB, Groq API)</span>
+      <span class="lang-en">Collaborated with the team that built the serverless AI chatbot on AWS (S3, Lambda, API Gateway, DynamoDB, Groq API)</span>
+    </li>
+  </ul>
+</section>
+
+<section class="detail-section reveal">
+  <h3 data-th="เครื่องมือและเทคโนโลยี" data-en="Tools &amp; Technologies">เครื่องมือและเทคโนโลยี</h3>
+  <div class="tool-badges">
+    <span>AWS Lambda</span><span>API Gateway</span><span>Amazon S3</span><span>DynamoDB</span><span>Groq API</span>
+  </div>
+</section>
+
+<div class="detail-cta reveal">
+  <p data-th="สนใจพูดคุยเกี่ยวกับโปรเจกต์นี้เพิ่มเติม?" data-en="Want to know more about this project?">สนใจพูดคุยเกี่ยวกับโปรเจกต์นี้เพิ่มเติม?</p>
+  <a href="../index.html#contact" class="btn btn-primary" data-th="ติดต่อฉัน" data-en="Contact Me">ติดต่อฉัน</a>
+</div>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Kunticha Boonsong. <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved.">สงวนลิขสิทธิ์</span></p>
+  <a href="../index.html#home" class="back-top"><span data-th="↑ กลับด้านบน" data-en="↑ Back to top">↑ กลับด้านบน</span></a>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

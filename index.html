@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kunticha Boonsong | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body data-lang="th">
+
+<div class="bg-glow"></div>
+<div id="progress-bar"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Kunticha<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
+      <a href="#about" data-th="เกี่ยวกับ" data-en="About">เกี่ยวกับ</a>
+      <a href="#skills" data-th="ทักษะ" data-en="Skills">ทักษะ</a>
+      <a href="#experience" data-th="ประสบการณ์" data-en="Experience">ประสบการณ์</a>
+      <a href="#projects" data-th="ผลงาน" data-en="Projects">ผลงาน</a>
+      <a href="#certificates" data-th="ใบประกาศนียบัตร" data-en="Certificates">ใบประกาศนียบัตร</a>
+      <a href="#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+      <button class="lang-toggle" id="langToggle">EN</button>
+    </nav>
+    <button class="burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content reveal">
+    <p class="hero-eyebrow" data-th="สวัสดี ฉันชื่อ" data-en="Hello, I'm">สวัสดี ฉันชื่อ</p>
+    <h1 class="hero-title">Kunticha <span class="text-gradient">Boonsong</span></h1>
+    <h2 class="hero-role">
+      <span id="typed"></span><span class="cursor">|</span>
+    </h2>
+    <p class="hero-desc"
+       data-th="นักศึกษาชั้นปีที่ 4 สาขา IT Innovation มหาวิทยาลัยกรุงเทพ หลงใหลใน Cloud และ Serverless Architecture บน AWS พร้อมประสบการณ์จริงด้านการออกแบบระบบและพัฒนา Front-End"
+       data-en="4th-year IT Innovation student at Bangkok University, passionate about cloud and serverless architecture on AWS, with hands-on experience in system design and front-end development.">
+      นักศึกษาชั้นปีที่ 4 สาขา IT Innovation มหาวิทยาลัยกรุงเทพ หลงใหลใน Cloud และ Serverless Architecture บน AWS พร้อมประสบการณ์จริงด้านการออกแบบระบบและพัฒนา Front-End
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary" data-th="ดูผลงานของฉัน" data-en="View My Work">ดูผลงานของฉัน</a>
+      <a href="assets/CV_Kunticha_Boonsong.pdf" class="btn btn-ghost" download data-th="ดาวน์โหลด Resume" data-en="Download Resume">ดาวน์โหลด Resume</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/KuntichaBoonsong" target="_blank" rel="noopener" aria-label="Github">GH</a>
+      <a href="mailto:kunticha.boonsong@gmail.com" aria-label="Email">@</a>
+      <a href="tel:+66931904491" aria-label="Phone">TEL</a>
+    </div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="orb"></div>
+    <div class="hero-photo-frame">
+      <img src="pic/profile/profile.jpg" alt="Kunticha Boonsong" onerror="this.parentElement.classList.add('no-photo')">
+    </div>
+  </div>
+  <a href="#about" class="scroll-down" aria-label="scroll down"><span></span></a>
+</section>
+
+<section id="about" class="section">
+  <div class="section-head reveal">
+    <span class="tag" data-th="รู้จักฉัน" data-en="Get To Know Me">รู้จักฉัน</span>
+    <h2><span data-th="เกี่ยวกับ" data-en="About">เกี่ยวกับ</span> <span class="text-gradient" data-th="ฉัน" data-en="Me">ฉัน</span></h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p class="lang-th">
+        ฉันเป็นนักศึกษาชั้นปีที่ 4 สาขา IT Innovation มหาวิทยาลัยกรุงเทพ กำลังสั่งสมประสบการณ์ตรงด้าน Cloud
+        และ Serverless Architecture บน AWS โดยได้พัฒนาและติดตั้ง Chatbot AI แบบ Serverless ด้วย AWS Lambda,
+        API Gateway, S3 และ DynamoDB
+      </p>
+      <p class="lang-en">
+        I'm a 4th-year IT Innovation student at Bangkok University, building hands-on experience with cloud
+        and serverless architecture on AWS. I built and deployed a serverless AI chatbot using AWS Lambda,
+        API Gateway, S3, and DynamoDB.
+      </p>
+      <p class="lang-th">
+        นอกเหนือจากพื้นฐานด้าน Cloud ฉันยังมีประสบการณ์จริงด้านผลิตภัณฑ์ ทั้งการออกแบบระบบ การวิเคราะห์ธุรกิจ
+        และการพัฒนา Front-End จากโปรเจกต์ capstone ร่วมกับองค์กรจริงอย่าง 1Moby และค่ายระดับประเทศอีกสองแห่ง
+        (ETDA, MTeX) ปัจจุบันกำลังมองหาตำแหน่งฝึกงานหรือตำแหน่งจูเนียร์สาย Cloud Engineer / Cloud Support
+        เพื่อต่อยอดความเชี่ยวชาญด้าน AWS และ Infrastructure ให้ลึกซึ้งยิ่งขึ้น
+      </p>
+      <p class="lang-en">
+        Beyond cloud fundamentals, I bring real product experience — system design, business analysis, and
+        front-end development — from a corporate capstone project with 1Moby and two national bootcamps
+        (ETDA, MTeX). I'm looking for a Cloud Engineer / Cloud Support internship or junior role to build
+        deeper AWS and infrastructure expertise.
+      </p>
+      <div class="about-info">
+        <div><span data-th="ชื่อ" data-en="Name">ชื่อ</span><p>Kunticha Boonsong</p></div>
+        <div><span data-th="อีเมล" data-en="Email">อีเมล</span><p>kunticha.boonsong@gmail.com</p></div>
+        <div><span data-th="การศึกษา" data-en="Education">การศึกษา</span><p>B.Sc. IT and Innovation, Bangkok University</p></div>
+        <div><span data-th="ที่อยู่" data-en="Location">ที่อยู่</span><p>Bangkok, Thailand</p></div>
+      </div>
+      <a href="assets/CV_Kunticha_Boonsong.pdf" class="btn btn-primary" download data-th="ดาวน์โหลด Resume" data-en="Download Resume">ดาวน์โหลด Resume</a>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card">
+        <h3 data-count="6">0</h3>
+        <p data-th="โปรเจกต์ที่ทำสำเร็จ" data-en="Projects Completed">โปรเจกต์ที่ทำสำเร็จ</p>
+      </div>
+      <div class="stat-card">
+        <h3 data-count="7">0</h3>
+        <p data-th="ใบประกาศนียบัตร" data-en="Certifications">ใบประกาศนียบัตร</p>
+      </div>
+      <div class="stat-card">
+        <h3 data-count="4">0</h3>
+        <p data-th="ปีการศึกษาที่ 4" data-en="Years of Study">ปีการศึกษาที่ 4</p>
+      </div>
+      <div class="stat-card">
+        <h3 data-count="3.29">0</h3>
+        <p data-th="เกรดเฉลี่ยสะสม" data-en="Cumulative GPA">เกรดเฉลี่ยสะสม</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section section-alt">
+  <div class="section-head reveal">
+    <span class="tag" data-th="ความสามารถ" data-en="Capabilities">ความสามารถ</span>
+    <h2><span data-th="ทักษะ" data-en="Skills">ทักษะ</span> <span class="text-gradient" data-th="และเครื่องมือ" data-en="&amp; Tools">และเครื่องมือ</span></h2>
+  </div>
+
+  <h3 class="skills-subhead" data-th="ทักษะเชิงเทคนิค" data-en="Technical Skills">ทักษะเชิงเทคนิค</h3>
+  <div class="skills-grid reveal">
+    <div class="skill-card">
+      <div class="skill-top"><span>AWS (Lambda, API Gateway, S3, DynamoDB)</span><span>75%</span></div>
+      <div class="bar"><i style="--w:75%"></i></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-top"><span data-th="Data analysis " data-en="Data Analysis">วิเคราะห์ข้อมูล</span><span>90%</span></div>
+      <div class="bar"><i style="--w:90%"></i></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-top"><span>HTML / CSS / JavaScript</span><span>60%</span></div>
+      <div class="bar"><i style="--w:60%"></i></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-top"><span data-th="การพัฒนาเว็บ" data-en="Web Development">การพัฒนาเว็บ</span><span>65%</span></div>
+      <div class="bar"><i style="--w:65%"></i></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-top"><span data-th="การวิเคราะห์ธุรกิจและออกแบบระบบ" data-en="Business Analysis &amp; System Design">การวิเคราะห์ธุรกิจและออกแบบระบบ</span><span>82%</span></div>
+      <div class="bar"><i style="--w:82%"></i></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-top"><span>Microsoft Office (Visio, Word, Excel)</span><span>85%</span></div>
+      <div class="bar"><i style="--w:85%"></i></div>
+    </div>
+  </div>
+
+  <div class="skills-secondary">
+    <div class="soft-skills">
+      <h3 class="skills-subhead" data-th="ทักษะด้านบุคคล" data-en="Soft Skills">ทักษะด้านบุคคล</h3>
+      <div class="pill-group">
+        <span class="pill" data-th="การทำงานเป็นทีม" data-en="Teamwork &amp; Collaboration">การทำงานเป็นทีม</span>
+        <span class="pill" data-th="การสื่อสาร" data-en="Communication">การสื่อสาร</span>
+        <span class="pill" data-th="การแก้ปัญหา" data-en="Problem-Solving">การแก้ปัญหา</span>
+        <span class="pill" data-th="การบริหารเวลา" data-en="Time Management">การบริหารเวลา</span>
+        <span class="pill" data-th="การคิดวิเคราะห์" data-en="Critical Thinking">การคิดวิเคราะห์</span>
+        <span class="pill" data-th="การปรับตัว" data-en="Adaptability">การปรับตัว</span>
+      </div>
+    </div>
+    <div class="languages">
+      <h3 class="skills-subhead" data-th="ภาษา" data-en="Languages">ภาษา</h3>
+      <div class="lang-list">
+        <div class="lang-item"><span>ไทย</span><small data-th="เจ้าของภาษา" data-en="Native">เจ้าของภาษา</small></div>
+        <div class="lang-item"><span>English</span><small data-th="ระดับต้น (B1)" data-en="Elementary (B1)">ระดับต้น (B1)</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="section-head reveal">
+    <span class="tag" data-th="เส้นทางของฉัน" data-en="My Journey">เส้นทางของฉัน</span>
+    <h2><span data-th="ประสบการณ์" data-en="Experience">ประสบการณ์</span> <span class="text-gradient" data-th="และกิจกรรม" data-en="&amp; Activities">และกิจกรรม</span></h2>
+  </div>
+  <div class="timeline reveal">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="projects/one-moby.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3>One Moby Senior Project</h3>
+          <span class="timeline-date">2026 - <span data-th="ปัจจุบัน" data-en="Present">ปัจจุบัน</span></span>
+        </div>
+        <p class="timeline-role" data-th="ระบบ Competency Assessment · Team Highfive · โปรเจกต์ capstone ร่วมกับองค์กรจริง" data-en="Competency Assessment System · Team Highfive · University capstone with a real corporate client">ระบบ Competency Assessment · Team Highfive · โปรเจกต์ capstone ร่วมกับองค์กรจริง</p>
+        <p class="lang-th">ร่วมออกแบบระบบประเมิน 180° การวิเคราะห์ช่องว่างทักษะ แผนพัฒนารายบุคคล (IDP) อัตโนมัติ และโมดูล LMS แบบเกม พร้อมทำวิจัยผู้ใช้ (persona, journey mapping) เพื่อออกแบบระบบให้ตรงความต้องการจริง</p>
+        <p class="lang-en">Partnered directly with 1Moby to design an end-to-end Competency Assessment system: 180° evaluation, gap analysis, auto-generated Individual Development Plans (IDP), and a gamified LMS module. Conducted UX research (personas, journey mapping) to ground the design in real user needs.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="experience/etda-bootcamp.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3>ETDA Bootcamp — Digital Trust</h3>
+          <span class="timeline-date">2026</span>
+        </div>
+        <p class="timeline-role" data-th="Team One Day Miracle · ค่ายระดับประเทศ 5 วัน" data-en="Team One Day Miracle · 5-day national bootcamp">Team One Day Miracle · ค่ายระดับประเทศ 5 วัน</p>
+        <p class="lang-th">ได้รับคัดเลือกเข้าร่วมโปรแกรมเข้มข้น 5 วันเรื่อง Digital ID, Verifiable Credentials (VC) และ Digital Document Wallet พร้อมออกแบบต้นแบบใช้งานจริงและนำเสนอต่อคณะกรรมการระดับประเทศ</p>
+        <p class="lang-en">Selected for an intensive 5-day program on Digital ID, Verifiable Credentials (VC), and Digital Document Wallets. Designed a working use-case prototype, presented to a national panel of judges.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="experience/mtex-hackathon.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3>MTeX Young Talent Bootcamp | Hackathon</h3>
+          <span class="timeline-date">2026</span>
+        </div>
+        <p class="timeline-role" data-th="Team BUITI x BUSEM · การแข่งขันระดับประเทศ ผู้เข้าร่วมกว่า 100 ทีม" data-en="Team BUITI x BUSEM · National competition, 100+ teams">Team BUITI x BUSEM · การแข่งขันระดับประเทศ ผู้เข้าร่วมกว่า 100 ทีม</p>
+        <p class="lang-th">ได้รับคัดเลือกเป็น 1 ใน 7 ทีมสุดท้ายจากผู้สมัครกว่า 100 ทีมทั่วประเทศ เพื่อนำเสนอในรอบ Final Pitching ที่ TIJ Bangkok พร้อมวางกลยุทธ์ธุรกิจและการตลาดฉบับสมบูรณ์ภายในเวลาแค่ 2 วัน</p>
+        <p class="lang-en">Selected as one of 7 finalist teams nationwide (from 100+ applicants) to pitch at the Final Pitching round, TIJ Bangkok. Delivered a complete business and marketing strategy pitch within a 2-day hackathon timeframe.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="projects/winstaller.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3>Winstaller — WordPress Platform</h3>
+          <span class="timeline-date">2026</span>
+        </div>
+        <p class="timeline-role" data-th="Backend Developer · โปรเจกต์กลุ่ม / งานวิชาการ" data-en="Backend Developer · Group / Academic Project">Backend Developer · โปรเจกต์กลุ่ม / งานวิชาการ</p>
+        <p class="lang-th">พัฒนาและดูแลระบบบน WordPress hosting (InfinityFree) ออกแบบโครงสร้างข้อมูลการแข่งขันด้วย CPT UI และ ACF พร้อมระบบสิทธิ์ผู้ใช้แบบ role-based และดูแลความปลอดภัย/สำรองข้อมูลด้วย Wordfence, WP Activity Log และ UpdraftPlus</p>
+        <p class="lang-en">Developed and maintained the system on WordPress hosting (InfinityFree); designed the competition data structure using CPT UI and ACF, plus a role-based access system. Maintained security and backups using Wordfence, WP Activity Log, and UpdraftPlus.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="projects/on8hotel.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3>On8hotel — Hotel Reservation Website</h3>
+          <span class="timeline-date">2026</span>
+        </div>
+        <p class="timeline-role" data-th="Full-Stack Developer (เน้น Front-End) · โปรเจกต์กลุ่ม / งานวิชาการ" data-en="Full-Stack Developer (Front-End focused) · Group / Academic Project">Full-Stack Developer (เน้น Front-End) · โปรเจกต์กลุ่ม / งานวิชาการ</p>
+        <p class="lang-th">พัฒนาเว็บไซต์จองห้องพักโรงแรมด้วย PHP เชื่อมต่อฐานข้อมูล รับผิดชอบหลักด้าน Front-End ควบคู่กับงาน Full-Stack ของระบบ</p>
+        <p class="lang-en">Built a hotel reservation website using PHP connected to a database, primarily responsible for the front-end while contributing across the full stack.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="projects/chat-pop.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3>Chat Pop — Serverless AI Chatbot</h3>
+          <span class="timeline-date">2025</span>
+        </div>
+        <p class="timeline-role" data-th="โปรเจกต์กลุ่ม / งานวิชาการ · AWS" data-en="Group / Academic Project · AWS">โปรเจกต์กลุ่ม / งานวิชาการ · AWS</p>
+        <p class="lang-th">พัฒนา Chatbot AI แบบ Serverless: Front-end บน Amazon S3, Backend ด้วย AWS Lambda และ API Gateway เชื่อมต่อ Groq API สำหรับตอบสนองแบบ low-latency และใช้ DynamoDB จัดเก็บข้อมูลแชท ครบวงจรโดยไม่ต้องใช้ managed server</p>
+        <p class="lang-en">Built a serverless AI chatbot: front-end hosted on Amazon S3, backend powered by AWS Lambda and API Gateway. Integrated the Groq API for low-latency responses and DynamoDB for scalable chat-session storage — full deployment path without a managed server.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="projects/ocean-run.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3 data-th="Ocean Run — เว็บลงทะเบียนงานวิ่ง" data-en="Ocean Run — Event Registration Website">Ocean Run — เว็บลงทะเบียนงานวิ่ง</h3>
+          <span class="timeline-date">2025</span>
+        </div>
+        <p class="timeline-role" data-th="โปรเจกต์ส่วนตัว / งานวิชาการ" data-en="Personal / Academic Project">โปรเจกต์ส่วนตัว / งานวิชาการ</p>
+        <p class="lang-th">ออกแบบและพัฒนา Front-End เว็บไซต์ลงทะเบียนงานวิ่งแบบ Responsive วางโครงสร้างเว็บทั้งหมดและสร้างหน้าจัดการสำหรับแอดมิน โดยเน้น UI/UX ที่ใช้งานง่ายในทุกขนาดหน้าจอ</p>
+        <p class="lang-en">Designed and developed a responsive event-registration website front-end using HTML, CSS, and JavaScript. Planned the full site layout and built the admin management page, prioritizing clean, user-friendly UI/UX.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="experience/science-ambassador.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3 data-th="Science Ambassador รุ่นที่ 20" data-en="Science Ambassador, 20th Cohort">Science Ambassador รุ่นที่ 20</h3>
+          <span class="timeline-date">2025</span>
+        </div>
+        <p class="timeline-role">YTSA (Young Thai Science Ambassador) · NSM Thailand</p>
+        <p class="lang-th">ได้รับคัดเลือกเป็น Science Ambassador จัดทำโปรเจกต์วิเคราะห์ข้อมูลการปล่อยคาร์บอนรายวันในรั้วมหาวิทยาลัยด้วยตนเอง และสื่อสารผลลัพธ์เพื่อสร้างความตระหนักรู้ถึงแหล่งปล่อยคาร์บอนที่มักถูกมองข้าม</p>
+        <p class="lang-en">Selected as a Science Ambassador; conducted an independent data-analysis project on daily carbon emissions within university settings. Communicated findings on overlooked emission sources to raise awareness.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <a href="experience/vice-president.html" class="timeline-card">
+        <div class="timeline-top">
+          <h3 data-th="รองประธานคณะ และ ประธานสาขา IT และ CD-DS" data-en="Faculty Vice President &amp; President, IT and CD-DS Branch">รองประธานคณะ และ ประธานสาขา IT และ CD-DS</h3>
+          <span class="timeline-date">2024 - 2025</span>
+        </div>
+        <p class="timeline-role" data-th="คณะกรรมการนักศึกษาคณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ" data-en="Faculty of Information Technology Committee, Bangkok University">คณะกรรมการนักศึกษาคณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ</p>
+        <p class="lang-th">เป็นตัวแทนคณะ IT ในการวางแผนและจัดกิจกรรมด้านเทคโนโลยีทั้งในระดับคณะและมหาวิทยาลัยตลอดทั้งปี ประสานงานระหว่างทีมนักศึกษาและอาจารย์ เสริมสร้างทักษะการจัดการองค์กรและการสื่อสาร</p>
+        <p class="lang-en">Represented the IT faculty in planning and organizing technology-related activities at faculty and university level throughout the year. Coordinated across student teams and faculty staff.</p>
+        <span class="timeline-more"><span data-th="ดูรายละเอียด" data-en="View Details">ดูรายละเอียด</span> →</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="section section-alt">
+  <div class="section-head reveal">
+    <span class="tag" data-th="ผลงาน" data-en="Portfolio">ผลงาน</span>
+    <h2><span data-th="โปรเจกต์" data-en="Selected">โปรเจกต์</span> <span class="text-gradient" data-th="ที่ผ่านมา" data-en="Projects">ที่ผ่านมา</span></h2>
+  </div>
+  <div class="projects-grid reveal">
+    <article class="project-card">
+      <div class="project-img"><img src="pic/projects/onemoby-head.png" alt="1Moby" onerror="this.remove()"></div>
+      <div class="project-body">
+        <h3>One Moby — Competency Assessment</h3>
+        <p class="lang-th">ระบบประเมินสมรรถนะครบวงจร: 180° evaluation, gap analysis, IDP อัตโนมัติ และ LMS แบบเกม สำหรับลูกค้าองค์กรจริง</p>
+        <p class="lang-en">End-to-end competency assessment platform: 180° evaluation, gap analysis, auto-generated IDPs, and a gamified LMS module for a real corporate client.</p>
+        <div class="project-tags"><span>System Design</span><span>UX Research</span><span>Front-End</span></div>
+        <a href="projects/one-moby.html" class="project-link"><span data-th="ดูโปรเจกต์" data-en="View Project">ดูโปรเจกต์</span> →</a>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-img"><img src="pic/projects/chatpop-head.png" alt="Chat Pop" onerror="this.remove()"></div>
+      <div class="project-body">
+        <h3>Chat Pop — Serverless AI Chatbot</h3>
+        <p class="lang-th">Chatbot AI แบบ Serverless เต็มรูปแบบบน AWS: S3, Lambda, API Gateway, DynamoDB และ Groq API</p>
+        <p class="lang-en">Fully serverless AI chatbot on AWS: front-end on S3, backend on Lambda + API Gateway, DynamoDB storage, and Groq API integration.</p>
+        <div class="project-tags"><span>AWS Lambda</span><span>API Gateway</span><span>DynamoDB</span></div>
+        <a href="projects/chat-pop.html" class="project-link"><span data-th="ดูโปรเจกต์" data-en="View Project">ดูโปรเจกต์</span> →</a>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-img"><img src="pic/projects/oceanrun-head.png" alt="Ocean Guardian — Ocean Run" onerror="this.remove()"></div>
+      <div class="project-body">
+        <h3 data-th="Ocean Run — เว็บลงทะเบียนงานวิ่ง" data-en="Ocean Run — Event Registration">Ocean Run — เว็บลงทะเบียนงานวิ่ง</h3>
+        <p class="lang-th">เว็บไซต์ลงทะเบียนงานวิ่งแบบ Responsive พร้อมหน้าจัดการสำหรับแอดมิน</p>
+        <p class="lang-en">Responsive event-registration website with a custom admin management page, built with HTML, CSS, and JavaScript.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a href="projects/ocean-run.html" class="project-link"><span data-th="ดูโปรเจกต์" data-en="View Project">ดูโปรเจกต์</span> →</a>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-img"><img src="pic/projects/winstaller-head.png" alt="Winstaller" onerror="this.remove()"></div>
+      <div class="project-body">
+        <h3>Winstaller — WordPress Platform</h3>
+        <p class="lang-th">ระบบจัดการการแข่งขันบน WordPress พร้อม CPT/ACF สิทธิ์ผู้ใช้แบบ role-based และระบบความปลอดภัย/สำรองข้อมูล</p>
+        <p class="lang-en">WordPress-based competition platform with custom CPT/ACF data structures, role-based access, and hardened security/backups.</p>
+        <div class="project-tags"><span>WordPress</span><span>ACF</span><span>Security</span></div>
+        <a href="projects/winstaller.html" class="project-link"><span data-th="ดูโปรเจกต์" data-en="View Project">ดูโปรเจกต์</span> →</a>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-img"><img src="pic/projects/On8.png" alt="On8hotel screenshot" onerror="this.remove()"></div>
+      <div class="project-body">
+        <h3>On8hotel — Hotel Reservation</h3>
+        <p class="lang-th">เว็บไซต์จองห้องพักโรงแรม พัฒนาด้วย PHP เชื่อมต่อฐานข้อมูล รับผิดชอบหลักด้าน Front-End ควบคู่กับงาน Full-Stack ของระบบ</p>
+        <p class="lang-en">A hotel reservation website built with PHP connected to a database — primarily responsible for the front-end while contributing across the full stack.</p>
+        <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Full-Stack</span></div>
+        <a href="projects/on8hotel.html" class="project-link"><span data-th="ดูโปรเจกต์" data-en="View Project">ดูโปรเจกต์</span> →</a>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-img"><img src="pic/projects/carbon-footprint-infographic.png" alt="University Life & Carbon Footprint infographic" onerror="this.remove()"></div>
+      <div class="project-body">
+        <h3 data-th="University Life &amp; Carbon Footprint" data-en="University Life &amp; Carbon Footprint">University Life &amp; Carbon Footprint</h3>
+        <p class="lang-th">อินโฟกราฟิกวิเคราะห์ข้อมูลการปล่อยคาร์บอนไดออกไซด์ในชีวิตมหาวิทยาลัย ชี้ให้เห็นแหล่งปล่อยคาร์บอนที่มักถูกมองข้าม ผลงานเดี่ยวในนาม Young Thai Science Ambassador รุ่นที่ 20</p>
+        <p class="lang-en">A data-driven infographic on carbon dioxide emissions in university life, highlighting overlooked everyday emission sources — an individual project as Young Thai Science Ambassador, 20th Cohort.</p>
+        <div class="project-tags"><span data-th="วิเคราะห์ข้อมูล" data-en="Data Analysis">วิเคราะห์ข้อมูล</span><span data-th="ออกแบบอินโฟกราฟิก" data-en="Infographic Design">ออกแบบอินโฟกราฟิก</span><span data-th="สื่อสารวิทยาศาสตร์" data-en="Science Communication">สื่อสารวิทยาศาสตร์</span></div>
+        <a href="projects/carbon-footprint.html" class="project-link"><span data-th="ดูโปรเจกต์" data-en="View Project">ดูโปรเจกต์</span> →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="certificates" class="section">
+  <div class="section-head reveal">
+    <span class="tag" data-th="เกียรติบัตร" data-en="Recognition">เกียรติบัตร</span>
+    <h2><span data-th="ใบประกาศ" data-en="Certifications">ใบประกาศ</span><span class="text-gradient" data-th="นียบัตร" data-en="">นียบัตร</span></h2>
+  </div>
+  <div class="cert-grid reveal">
+    <div class="cert-card">
+      <div class="cert-icon"><img src="certificate/YTSA.jpg" alt="YTSA Certificate" onerror="this.parentElement.textContent='🔬'"></div>
+      <h4 data-th="Young Thai Science Ambassador รุ่นที่ 20" data-en="Young Thai Science Ambassador, 20th Cohort">Young Thai Science Ambassador รุ่นที่ 20</h4>
+      <p>NSM Thailand · 2025</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><img src="certificate/ibm-quantum-algorithms.png" alt="IBM Quantum Algorithms Certificate" onerror="this.parentElement.textContent='🧮'"></div>
+      <h4>Fundamentals of Quantum Algorithms</h4>
+      <p>IBM · 2025</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><img src="certificate/marketing-tech-expert.png" alt="Marketing Technology Expert Certificate" onerror="this.parentElement.textContent='📈'"></div>
+      <h4>Marketing Technology Expert — Foundation</h4>
+      <p>MTeX · 2026</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><img src="certificate/etda-bootcamp.png" alt="ETDA Bootcamp Certificate" onerror="this.parentElement.textContent='🆔'"></div>
+      <h4>ETDA Bootcamp — Digital Trust</h4>
+      <p>ETDA · 2026</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><img src="certificate/borntodev-intro-quantum.png" alt="BorntoDev Introduction to Quantum Computing Certificate" onerror="this.parentElement.textContent='⚛️'"></div>
+      <h4>Introduction to Quantum Computing</h4>
+      <p>BorntoDev · 2025</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><img src="certificate/borntodev-oracle-101.png" alt="BorntoDev OracleDB 101 Certificate" onerror="this.parentElement.textContent='🗄️'"></div>
+      <h4>OracleDB 101</h4>
+      <p>BorntoDev · 2025</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><img src="certificate/national-arts-crafts-presentation.png" alt="66th National Arts and Crafts Competition Certificate" onerror="this.parentElement.textContent='🏆'"></div>
+      <h4 data-th="การนำเสนอผลงาน" data-en="Program Presentation">การนำเสนอผลงาน</h4>
+      <p>66th National Arts and Crafts Competition</p>
+    </div>
+  </div>
+
+  <div class="education-block reveal">
+    <h3 class="skills-subhead" data-th="ประวัติการศึกษา" data-en="Academic History">ประวัติการศึกษา</h3>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h4>Bangkok University</h4>
+        <p data-th="ปริญญาตรี เทคโนโลยีสารสนเทศและนวัตกรรม" data-en="B.Sc. Information Technology and Innovation">ปริญญาตรี เทคโนโลยีสารสนเทศและนวัตกรรม</p>
+        <span class="edu-meta">2023 - <span data-th="ปัจจุบัน" data-en="Present">ปัจจุบัน</span> · GPA 3.29</span>
+      </div>
+      <div class="edu-card">
+        <h4 data-th="โรงเรียนวัดนวลนรดิศ" data-en="Wat Nuannoradit School">โรงเรียนวัดนวลนรดิศ</h4>
+        <p data-th="แผนการเรียนภาษาจีน-อังกฤษ" data-en="Chinese and English Language Arts">แผนการเรียนภาษาจีน-อังกฤษ</p>
+        <span class="edu-meta">2019 - 2023 · GPA 3.53</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section-alt">
+  <div class="section-head reveal">
+    <span class="tag" data-th="ติดต่อ" data-en="Get In Touch">ติดต่อ</span>
+    <h2><span data-th="มาคุย" data-en="Let's">มาคุย</span> <span class="text-gradient" data-th="กันเถอะ" data-en="Talk">กันเถอะ</span></h2>
+  </div>
+  <div class="contact-grid contact-grid-solo reveal">
+    <div class="contact-info">
+      <p class="lang-th">สนใจร่วมงาน ฝึกงาน หรืออยากพูดคุยเกี่ยวกับ Cloud/AWS และงาน Front-End? ติดต่อฉันได้ตามช่องทางด้านล่าง ฉันยินดีตอบกลับทุกข้อความ</p>
+      <p class="lang-en">Interested in collaborating, an internship, or want to talk about Cloud/AWS and front-end work? Reach out through any of the channels below — I'd love to hear from you.</p>
+      <div class="contact-item"><span data-th="อีเมล" data-en="Email">อีเมล</span><p>kunticha.boonsong@gmail.com</p></div>
+      <div class="contact-item"><span data-th="โทรศัพท์" data-en="Phone">โทรศัพท์</span><p>+66 93-190-4491</p></div>
+      <div class="contact-item"><span>GitHub</span><p>github.com/KuntichaBoonsong</p></div>
+      <div class="contact-item"><span data-th="ที่อยู่" data-en="Location">ที่อยู่</span><p>Bangkok, Thailand</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Kunticha Boonsong. <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved.">สงวนลิขสิทธิ์</span></p>
+  <a href="#home" class="back-top"><span data-th="↑ กลับด้านบน" data-en="↑ Back to top">↑ กลับด้านบน</span></a>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

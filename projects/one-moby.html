@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Moby — Competency Assessment | Kunticha Boonsong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=4">
+</head>
+<body data-lang="th">
+
+<div class="bg-glow"></div>
+<div id="progress-bar"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html#home" class="logo">Kunticha<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html#home" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
+      <a href="../index.html#about" data-th="เกี่ยวกับ" data-en="About">เกี่ยวกับ</a>
+      <a href="../index.html#skills" data-th="ทักษะ" data-en="Skills">ทักษะ</a>
+      <a href="../index.html#experience" data-th="ประสบการณ์" data-en="Experience">ประสบการณ์</a>
+      <a href="../index.html#projects" data-th="ผลงาน" data-en="Projects">ผลงาน</a>
+      <a href="../index.html#certificates" data-th="ใบประกาศนียบัตร" data-en="Certificates">ใบประกาศนียบัตร</a>
+      <a href="../index.html#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+      <button class="lang-toggle" id="langToggle">EN</button>
+    </nav>
+    <button class="burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<a href="../index.html#projects" class="back-link reveal">← <span data-th="กลับไปหน้าผลงาน" data-en="Back to Projects">กลับไปหน้าผลงาน</span></a>
+
+<section class="project-hero reveal">
+  <div class="project-hero-icon"><img src="../pic/projects/onemoby-head.png" alt="1Moby" onerror="this.remove(); this.parentElement.textContent='1M'"></div>
+  <div>
+    <h1 class="project-hero-title">One Moby — Competency Assessment</h1>
+    <p class="project-hero-sub" data-th="ระบบประเมินสมรรถนะครบวงจร พร้อม Gap Analysis, IDP อัตโนมัติ และ LMS แบบเกม" data-en="An end-to-end competency assessment system with gap analysis, auto-generated IDPs, and a gamified LMS">ระบบประเมินสมรรถนะครบวงจร พร้อม Gap Analysis, IDP อัตโนมัติ และ LMS แบบเกม</p>
+    <div class="project-meta">
+      <span><b data-th="บทบาท" data-en="Role">บทบาท</b>: <span data-th="ออกแบบระบบ, Front-End และกำลังพัฒนา Backend" data-en="System Design, Front-End &amp; Backend (In Progress)">ออกแบบระบบ, Front-End และกำลังพัฒนา Backend</span></span>
+      <span><b data-th="ทีม" data-en="Team">ทีม</b>: Team Highfive</span>
+      <span><b data-th="ปี" data-en="Year">ปี</b>: 2026 - <span data-th="ปัจจุบัน" data-en="Present">ปัจจุบัน</span></span>
+    </div>
+    <div class="project-tags">
+      <span>System Design</span><span>UX Research</span><span>Front-End</span><span>LMS</span>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section reveal">
+  <h3 data-th="ภาพรวมโปรเจกต์" data-en="Project Overview">ภาพรวมโปรเจกต์</h3>
+  <p class="lang-th">
+    One Moby เป็นโปรเจกต์ capstone ระดับมหาวิทยาลัยที่ร่วมงานกับลูกค้าองค์กรจริง โดยฉันได้ร่วมออกแบบระบบ
+    Competency Assessment แบบครบวงจรให้กับ 1Moby ตั้งแต่การประเมินผลแบบ 180° การวิเคราะห์ช่องว่างทักษะ (Gap Analysis)
+    การสร้างแผนพัฒนารายบุคคล (Individual Development Plan) แบบอัตโนมัติ ไปจนถึงโมดูล LMS ที่มีองค์ประกอบรูปแบบ Gamification
+    เพื่อสร้างแรงจูงใจในการเรียนรู้
+  </p>
+  <p class="lang-en">
+    One Moby is a university capstone project partnered with a real corporate client. I helped design an
+    end-to-end Competency Assessment system for 1Moby — from 180° evaluation and gap analysis, to
+    auto-generated Individual Development Plans (IDP), and a gamified LMS module to drive learning engagement.
+  </p>
+  <p class="lang-th">
+    โปรเจกต์นี้ยังอยู่ระหว่างการพัฒนา ปัจจุบันทีมฉันกำลังดำเนินการต่อในส่วน Backend ของระบบ
+  </p>
+  <p class="lang-en">
+    This project is still in progress — my team is currently continuing development on the system's backend.
+  </p>
+</section>
+
+
+<section class="detail-section reveal">
+  <h3 data-th="ไฮไลต์การทำงาน" data-en="Key Highlights">ไฮไลต์การทำงาน</h3>
+  <ul class="feature-list">
+    <li>
+      <span class="lang-th">ออกแบบ System Architecture Flow แบบครบวงจร (assessment → gap analysis → IDP → LMS → rewards)</span>
+      <span class="lang-en">Designed the full system architecture flow (assessment → gap analysis → IDP → LMS → rewards)</span>
+    </li>
+    <li>
+      <span class="lang-th">ร่วมพัฒนาในส่วน Front-End ของระบบ</span>
+      <span class="lang-en">Contributed to front-end implementation</span>
+    </li>
+    <li>
+      <span class="lang-th">ทำวิจัยผู้ใช้ (User Research) ด้วย Persona และ Journey Mapping เพื่อออกแบบระบบให้ตรงกับความต้องการจริง</span>
+      <span class="lang-en">Conducted UX research (personas, journey mapping) to ground the system design in real user needs</span>
+    </li>
+    <li>
+      <span class="lang-th">ออกแบบแนวคิด Gamification สำหรับโมดูล LMS (Points, Skills, Missions, EXP) และปัจจุบันกำลังพัฒนาต่อในส่วน Backend</span>
+      <span class="lang-en">Designed the Gamification concept for the LMS module (Points, Skills, Missions, EXP) and currently continuing development on the backend</span>
+    </li>
+  </ul>
+</section>
+
+<section class="detail-section reveal">
+  <h3 data-th="เครื่องมือและเทคโนโลยี" data-en="Tools &amp; Technologies">เครื่องมือและเทคโนโลยี</h3>
+  <div class="tool-badges">
+    <span>System Design</span><span>UX Research</span><span>Persona &amp; Journey Mapping</span><span>Front-End Development</span><span>LMS / Gamification</span>
+  </div>
+</section>
+
+<div class="detail-cta reveal">
+  <p data-th="สนใจพูดคุยเกี่ยวกับโปรเจกต์นี้เพิ่มเติม?" data-en="Want to know more about this project?">สนใจพูดคุยเกี่ยวกับโปรเจกต์นี้เพิ่มเติม?</p>
+  <a href="../index.html#contact" class="btn btn-primary" data-th="ติดต่อฉัน" data-en="Contact Me">ติดต่อฉัน</a>
+</div>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Kunticha Boonsong. <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved.">สงวนลิขสิทธิ์</span></p>
+  <a href="../index.html#home" class="back-top"><span data-th="↑ กลับด้านบน" data-en="↑ Back to top">↑ กลับด้านบน</span></a>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
