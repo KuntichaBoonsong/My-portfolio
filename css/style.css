@@ -468,6 +468,15 @@ body[data-lang="en"] .lang-en { display: block; }
   transition: width 1.4s var(--ease);
 }
 .skill-card.in-view .bar i { width: var(--w); }
+.skill-name { font-size: 1.05rem; font-weight: 600; margin-bottom: 14px; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-tags span {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--blue-light);
+  font-size: 0.85rem;
+}
 
 .skills-secondary {
   display: grid;
