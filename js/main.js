@@ -27,8 +27,8 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 const roles = {
-  th: ['Cloud / AWS Enthusiast', 'IT Innovation Student', 'Front-End Developer', 'ผู้ชื่นชอบ Serverless'],
-  en: ['Cloud / AWS Enthusiast', 'IT Innovation Student', 'Front-End Developer', 'Serverless Enthusiast']
+  th: ['DevOps / Cloud Engineer Intern', 'IT Innovation Student'],
+  en: ['DevOps / Cloud Engineer Intern', 'IT Innovation Student']
 };
 const typedEl = document.getElementById('typed');
 let roleIndex = 0, charIndex = 0, deleting = false, typeTimer = null;
